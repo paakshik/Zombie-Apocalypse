@@ -2,14 +2,14 @@
 /**function for loading all the files*/;
 function preload() {
     /**Helicoptor image loaded*/;
-    helicopterImage = loadImage("Images/helicopter.png");
+    helicopterImage = loadImage("helicopter.png");
     /**package image loaded*/;
-    packageImage = loadImage("Images/package.png");
+    packageImage = loadImage("package.png");
     /**Background imgage loaded*/;
-    backImage = loadImage("Images/image3.jpg");
-    ZombieSound = loadSound("Sound/sound2.mp3");
-    helicopterSound = loadSound("Sound/sound1.mp3");
-    zombie = loadImage("Images/zombie.png")
+    backImage = loadImage("image3.jpg");
+    ZombieSound = loadSound("sound2.mp3");
+    helicopterSound = loadSound("sound1.mp3");
+    zombie = loadImage("zombie.png")
 }
 /**function for creating all the sprites*/;
 function setup() {
