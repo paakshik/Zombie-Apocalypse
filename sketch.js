@@ -27,7 +27,12 @@ function setup() {
 }
 function draw() {
     /**startup function for all basic projects*/;
-
+if (c3 === true){
+        ZombieSound.play();
+        ZombieSound.setVolume(0.3);
+        helicopterSound.play();
+        helicopterSound.setVolume(0.3);
+    }
     /**show the ground*/;
     ground.show()
 
@@ -40,10 +45,7 @@ function draw() {
     y++;
     /**making packages fall when up arrow is pressed*/;
     if (keyWentDown(DOWN_ARROW)) {
-        ZombieSound.play();
-        ZombieSound.setVolume(0.3);
-        helicopterSound.play();
-        helicopterSound.setVolume(0.3);
+       
         /**restricting it to 6 packages*/;
         if (box_Delevered2 < 5) {
             packagesArray2.push(new Box(y, 210, 40, 40, false, packageImage));
